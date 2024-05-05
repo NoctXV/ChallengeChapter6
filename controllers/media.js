@@ -12,7 +12,7 @@ module.exports = {
             if (!title || !description || !file) {
                 return res.status(400).json({
                     status: false,
-                    message: "all data are reqired",
+                    message: "all data are required",
                     data: null,
                 });
             }
