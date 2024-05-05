@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => res.json({ status: true, message: 'Hello world!', data: null }));
 const routes = require('./routes/router');
 app.use('/api/v1', routes);
 
