@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { upload, list, detail, deletemedia, update, deletemedia } = require('../controllers/media')
+const { upload, list, detail, deletemedia, update} = require('../controllers/media')
 const { image } = require('../libs/multer');
 
 router.post('/image/upload', image.single('image'), upload);
