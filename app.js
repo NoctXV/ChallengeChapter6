@@ -2,6 +2,7 @@ require('dotenv').config();
 var express = require('express');
 var logger = require('morgan');
 var app = express();
+var cookieParser = require("cookie-parser");
 var path = require('path');
 
 app.use(logger('dev'));
